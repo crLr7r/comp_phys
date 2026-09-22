@@ -102,6 +102,7 @@ with open("study.txt", "w", encoding="utf-8") as study_file:
 with open("study.txt", "r", encoding="utf-8") as study_file:
     print(study_file.read())
 
+# class
 class Student:
     def __init__(self, name, age, location):
         self.name = name
