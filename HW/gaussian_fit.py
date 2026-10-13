@@ -7,6 +7,7 @@ import random
 from colorsys import hsv_to_rgb
 
 HOME = os.path.abspath(os.path.dirname(__file__))
+os.chdir(HOME)
 
 # 데이터 읽어들이기
 bins, count = [], []
