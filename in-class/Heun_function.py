@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
 def heun(f, y0, t0, tf, h, ea=1.e-7):
     n = int((tf - t0) / h)
