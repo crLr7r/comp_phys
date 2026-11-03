@@ -40,8 +40,8 @@ iris = datasets.load_iris()
 
 
 fig, ax = plt.subplots()
-scatter = ax.scatter(iris.data[:, 0], iris.data[:, 1], c=iris.target)
-ax.set(xlabel=iris.feature_names[0], ylabel=iris.feature_names[1])
+scatter = ax.scatter(iris.data[:, 2], iris.data[:, 3], c=iris.target)
+ax.set(xlabel=iris.feature_names[2], ylabel=iris.feature_names[3])
 ax.legend(
     scatter.legend_elements()[0],
     iris.target_names,
