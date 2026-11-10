@@ -61,11 +61,13 @@ N = 100
 x = np.linspace(0,2*np.pi,N).reshape(N,1)
 
 np.random.seed(1)
-y = np.random.rand(N,1)
+y = np.sin(x)
 y += 0.3*np.random.rand(N,1)
 
 print(x.shape)
 print(y.shape)
+
 plt.scatter(x,y)
+plt.plot(x, np.sin(x))
 plt.title("Sine wave noise data")
 plt.show()
